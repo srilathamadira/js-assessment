@@ -1,0 +1,131 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #a2a8d3;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    color: #333;
+  }
+  
+
+  .container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to next line on smaller screens */
+    justify-content: center; /* Centers sections horizontally */
+    gap: 20px; /* Space between sections */
+    padding: 20px;
+    max-width: 1200px; /* Limit width for larger screens */
+    width: 100%;
+  }
+  
+  /* Heading Styling */
+  h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  /* Section Styling */
+  .section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px; /* Fixed width for each section */
+    text-align: center;
+  }
+  .section:hover{
+    background-color: #a2a8d3;
+  }
+  
+  /* Input and Select Styling */
+  input[type="number"], input[type="text"], select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  /* Button Styling */
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: black;
+    transform: scale(1.05);
+  }
+  
+  /* Result Text Styling */
+  .result {
+    font-size: bolder;
+    margin-top: 10px;
+    color: white;
+    
+  }
+  .section p #fullName:hover{
+    color: white;
+  }
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+    .container {
+      flex-direction: row; /* Ensure sections are in a row on larger tablets/desktops */
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .container {
+      flex-direction: column; /* Stack sections vertically on medium screens */
+    }
+  
+    .section {
+      width: 70%; /* Adjust section width on medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+      margin-left: 10%; /* Reduce padding for smaller tablets */
+    }
+  
+    .section {
+      width: 70%; /* Full width for sections on smaller screens */
+    }
+  
+    h2 {
+      font-size: 20px; /* Slightly smaller heading for smaller screens */
+    }
+  
+    .result {
+      font-size: 16px; /* Adjust result text size for better readability on small screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section {
+      padding: 15px; /* Adjust padding for very small screens */
+    }
+  
+    h2 {
+      font-size: 18px; /* Further reduce heading size */
+    }
+  
+    .result {
+      font-size: 14px; /* Further reduce result text size */
+    }
+  }
+  
